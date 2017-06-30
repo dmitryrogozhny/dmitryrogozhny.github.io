@@ -10,15 +10,21 @@
 {% endcomment %}
 
 <!-- Google Analytics -->
-{% if jekyll.environment == "production" %}
-    <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+{% if site.google_analytics %}
 
-        ga("create", "{{ site.google_analytics }}", "auto");
-        ga("send", "pageview");
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    {% if jekyll.environment == "production" %}
+        <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+            ga("create", "{{ site.google_analytics }}", "auto");
+            ga("send", "pageview");
+        </script>
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+    {% else %}
+        <!-- jekyll.environment variable is "{{ jekyll.environment }}" and not "production", Google Analytics snippet will be skipped. -->
+    {% endif %}
+
 {% else %}
-    <!-- Jekyll environment is "{{ jekyll.environment }}", skipping Google Analytics snippet rendering. -->
+    <!-- Please specify google_analytics variable in the _config.yml to enable Google Analytics -->
 {% endif %}
 <!-- End Google Analytics -->

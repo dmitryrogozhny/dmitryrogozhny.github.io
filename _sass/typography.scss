@@ -1,0 +1,144 @@
+/*
+    Variables
+*/
+$display-font: "Cabin", sans-serif;
+$text-font: "Open Sans", sans-serif;
+
+$header-color: #000;
+$text-color: rgba(0, 0, 0, .9);
+
+$link-color: #005ea5;
+$link-color-visited: #5c005c;
+$link-color-hover: #a80000;
+$link-color-focus: #ffbf47;
+
+$text-font-size: 1rem;
+$header1-font-size: 3rem;
+$header2-font-size: 2rem;
+$header3-font-size: 1.5rem;
+
+$text-line-height: 1.45;
+
+$page-header-font-size: 5rem;
+
+/*
+    Global settings
+*/
+html {
+    font-family: $text-font;
+    font-size: $text-font-size;
+    color: $text-color;
+
+    // increase font sizes on larger screens
+    @media screen and (min-width: $breakpoint-small) {
+        font-size: $text-font-size * 1.2;
+    }
+}
+
+/*
+    Headers
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $display-font;
+    color: $header-color;
+
+    margin-bottom: .1em;
+}
+
+h1 {
+    font-size: $header1-font-size;
+    // visual compensation for a header to allign with an underneath text
+    margin-left: -.1rem;
+}
+
+h2 {
+    font-size: $header2-font-size;
+    // visual compensation for a header to allign with an underneath text
+    margin-left: -.1rem;
+}
+
+h3 {
+    font-size: $header3-font-size;
+}
+
+/*
+    Paragraph
+*/
+p {
+    line-height: $text-line-height;
+
+    margin-top: 1.4rem;
+    margin-bottom: 0;
+}
+
+// Move first paragraph of a text after a header close to the header
+h1 + p {
+    margin-top: .2rem;
+}
+
+h2 + p {
+    margin-top: .2rem;
+}
+
+h3 + p {
+    margin-top: .2rem;
+}
+
+
+/*
+    Lists
+*/
+ol, ul {
+    padding-left: .2rem;
+    margin: .2rem 0 .2rem 1.1rem;
+
+    line-height: $text-line-height;
+}
+
+li {
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+/*
+    Links
+*/
+a {
+    color: $link-color;
+    // text-decoration: none;
+    // background-color: 1px solid blue;
+
+    &:visited {
+        color: $link-color-visited;
+    }
+
+    &:hover {
+        color: $link-color-hover;
+    }
+
+    &:focus {
+        background-color: $link-color-focus;
+        outline: 3px solid $link-color-focus;
+    }
+}
+
+/*
+    Additional styles
+*/
+// Style for hero-titles, i.e. titles larger than H1.
+.page-header {
+    font-size: $page-header-font-size;
+
+    margin: 0 0 -.1rem -.3rem;
+}
+
+// Style for headers that are page titles, remove margins, leave visual compensation for a title (small negative left margin)
+.page-title {
+    margin: 0 0 -.1rem -.1rem;
+}
+
+// Style for additional information. Less intensive in color and smaller than the regular text;
+.tertiary-info {
+    color: rgba($text-color, .8);
+    font-size: .8 * $text-font-size;
+}

@@ -1,0 +1,144 @@
+$menu-item-color: $header-color;
+$menu-item-color-hover: $link-color-hover;
+$menu-item-color-focus: $link-color-focus;
+$menu-item-color-active: #ea4300;
+
+$menu-font-size: .9rem;
+$menu-font-line-height: 2.5rem;
+
+/*
+    Menu
+*/
+.menu {
+    position: relative;
+    display: block;
+
+    padding-top: .5em;
+
+    /*
+        for larger screens fit logo and menu on a single line.
+    */
+    @media screen and (min-width: $breakpoint-small) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*
+    Logo
+*/
+.logo {
+    $logo-size: 50px;
+    $logo-color: #000;
+    $logo-color-active: #000;
+
+    display: flex;
+    flex-direction: row;
+
+    font-family: $display-font;
+    font-size: $menu-font-size;
+    line-height: $menu-font-line-height;
+    color: $logo-color;
+
+    letter-spacing: .2px;
+
+    .logo__link {
+        display: flex;
+        flex-direction: row;
+
+        text-decoration: none;
+
+        &:visited {
+            color: $logo-color;
+        }
+
+        &:hover {
+            color: $menu-item-color-hover;
+        }
+
+        &:focus {
+            background-color: inherit;
+            outline:2px solid $menu-item-color-focus;
+        }
+    }
+
+    .logo__image {
+        width: $logo-size;
+        height: $logo-size;
+        border-radius: 50%;
+
+        background: url("../assets/logo.png") no-repeat center center;
+        background-size: contain;
+    }
+
+    .logo__title {
+        display: block;
+        padding-left: .3em;
+    }
+
+    .logo__title_active {
+        color: $logo-color-active;
+    }
+}
+
+
+/*
+    Primary menu
+*/
+.menu__items {
+    display: flex;
+    flex-direction: row;
+
+    padding: .2em 0 0 0;
+    margin: 0;
+
+    list-style: none;
+
+    @media screen and (min-width: $breakpoint-small) {
+        padding: 0 0 0 1em;
+    }
+}
+
+.menu__item {
+    font-family: $display-font;
+    font-size: $menu-font-size;
+    line-height: $menu-font-line-height;
+    color: $menu-item-color;
+    letter-spacing: .2px;
+
+    padding: .6em .4em;
+
+    text-decoration: none;
+
+    &:visited {
+        color: $menu-item-color;
+    }
+
+    &:hover {
+        color: $menu-item-color-hover;
+    }
+
+    &:focus {
+        background-color: $menu-item-color-focus;
+        outline: 2px solid $menu-item-color-focus;
+    }
+}
+
+/* add animation to make border-bottom appear with animation */
+@include animation-border-bottom-appear($menu-item-color-active);
+
+.menu__item_active {
+    color: $menu-item-color-active;
+    border-bottom: 1px solid $menu-item-color-active;
+
+    animation-name: border-bottom-appear;
+    animation-duration: .5s;
+
+    &:visited {
+        color: $menu-item-color-active;
+    }
+
+    &:hover {
+        color: $menu-item-color-active;
+    }
+}

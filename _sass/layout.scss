@@ -1,0 +1,45 @@
+$vertical-gutter: 1em;
+
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 2%;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    margin: 0 auto;
+    max-width: 70rem;
+}
+
+.main {
+    flex: 1 0 auto;
+
+    padding-bottom: 3 * $vertical-gutter;
+}
+
+.header, .footer {
+    flex: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: $vertical-gutter;
+}
+
+.footer {
+    height: 2rem;
+}

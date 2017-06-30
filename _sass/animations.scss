@@ -1,0 +1,6 @@
+@mixin animation-border-bottom-appear($color) {
+    @keyframes border-bottom-appear {
+        0%   { border-bottom: 1px solid transparent; }
+        100%  { border-bottom: 1px solid $color; }
+    }
+}

@@ -1,0 +1,24 @@
+{% comment %}
+    Adds Google analytics tracking for the site.
+
+    Checks whether the environment variable is "production" to render the snippet. Otherwise, renders a waring comment.
+
+    The include should be added near the top of the <head> tag and before any other script or CSS tags,
+    and the parameter google_analytics should be specified in the _config.ylm.
+
+    This include uses the async version of the snippet. See https://developers.google.com/analytics/devguides/collection/analyticsjs/ for details.
+{% endcomment %}
+
+<!-- Google Analytics -->
+{% if jekyll.environment == "production" %}
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+        ga("create", "{{ site.google_analytics }}", "auto");
+        ga("send", "pageview");
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+{% else %}
+    <!-- Jekyll environment is "{{ jekyll.environment }}", skipping Google Analytics snippet rendering. -->
+{% endif %}
+<!-- End Google Analytics -->

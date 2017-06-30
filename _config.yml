@@ -15,6 +15,8 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
+google_analytics: UA-100633158-1
+
 # Posts settings
 permalink: /blog/:title
 # paginate: 2

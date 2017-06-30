@@ -3,6 +3,8 @@ layout: post
 title:  Options for Personal Site's Platform
 date:   2017-06-30 11:00
 
+published: true
+
 tags: [personal site, jekyll]
 ---
 

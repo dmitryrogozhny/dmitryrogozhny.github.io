@@ -3,6 +3,8 @@ layout: post
 title:  Setting Up Jekyll and Hosting
 date:   2017-07-03 12:00
 
+published: false
+
 tags: [personal site, jekyll]
 ---
 

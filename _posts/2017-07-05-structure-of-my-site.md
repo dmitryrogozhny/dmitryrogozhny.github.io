@@ -3,6 +3,8 @@ layout: post
 title:  Structure of My Site
 date:   2017-07-05 12:00
 
+published: false
+
 tags: [personal site, jekyll]
 ---
 

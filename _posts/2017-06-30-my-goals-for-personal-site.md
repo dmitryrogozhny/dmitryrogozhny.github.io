@@ -3,6 +3,8 @@ layout: post
 title:  My Goals for Personal Site
 date:   2017-06-30 10:00
 
+published: true
+
 tags: [ personal site, jekyll]
 ---
 

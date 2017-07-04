@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Jekyll as Platform for Personal Site
-date:   2017-07-01 12:00
+date:   2017-07-04 12:00
 
-published: false
+published: true
 
 tags: [personal site, jekyll]
 ---

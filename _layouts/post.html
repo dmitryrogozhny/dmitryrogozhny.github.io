@@ -1,5 +1,7 @@
 ---
 layout: default
+
+comments: true
 ---
 
 <article class="post">
@@ -20,4 +22,6 @@ layout: default
             {% endif %}
         {% endfor %}
     </div>
+    <br/>
+    {% include disqus.html %}
 </article>

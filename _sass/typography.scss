@@ -13,6 +13,7 @@ $link-color-hover: #a80000;
 $link-color-focus: #ffbf47;
 
 $text-font-size: 1rem;
+$tertiary-info-font-size: .8 * $text-font-size;
 $header1-font-size: 3rem;
 $header2-font-size: 2rem;
 $header3-font-size: 1.5rem;
@@ -140,5 +141,5 @@ a {
 // Style for additional information. Less intensive in color and smaller than the regular text;
 .tertiary-info {
     color: rgba($text-color, .8);
-    font-size: .8 * $text-font-size;
+    font-size: $tertiary-info-font-size;
 }

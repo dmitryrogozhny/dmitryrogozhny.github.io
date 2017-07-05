@@ -6,10 +6,13 @@
 @import "animations";
 @import "layout";
 
+@import "syntax";
+
 /*
     Components
 */
 @import "blog";
 
-@import "menu";
-@import "posts-list";
+@import "./components/menu";
+@import "./components/posts-list";
+@import "./components/previous-next-post-links";

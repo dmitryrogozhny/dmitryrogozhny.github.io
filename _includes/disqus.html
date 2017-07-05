@@ -1,7 +1,8 @@
 {% comment %}
     Adds Disqus comments for the site.
 
-    Checks whether the environment variable is "production" to render the snippet. Otherwise, renders a waring comment.
+    Checks whether the environment variable is "production" to render the snippet, otherwise renders a waring comment.    
+    Requires comments: true value in the page's YAML header, otherwise renders a warning.
 
     The include should be added where the commenting sectiong should appear,
     and the parameter disqus.shortname should be specified in the _config.ylm.
@@ -14,8 +15,8 @@
             <div id="disqus_thread"></div>
             <script>
                 var disqus_config = function () {
-                    this.page.url = "{{ page.url | absolute_url }}";
-                    this.page.identifier = "{{ page.url | absolute_url }}";
+                    this.page.url = "{{ site.url }}{{ page.url }}";
+                    this.page.identifier = "{{ site.url }}{{ page.url }}";
                 };
 
                 (function() {

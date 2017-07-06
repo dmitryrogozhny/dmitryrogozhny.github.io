@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Structure of My Site
-date:   2017-07-05 12:00
+date:   2017-07-06 12:00
 
-published: false
+published: true
 
 tags: [personal site, jekyll]
 ---

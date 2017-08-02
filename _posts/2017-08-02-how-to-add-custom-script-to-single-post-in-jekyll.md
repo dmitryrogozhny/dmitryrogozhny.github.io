@@ -8,7 +8,7 @@ tags: [jekyll]
 image: /assets/how-to-add-custom-script-header.png
 
 custom-javascript-list:
-    - "http://code.jquery.com/jquery-3.2.1.min.js"
+    - "https://code.jquery.com/jquery-3.2.1.min.js"
 
 custom-css-list:
      - "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
@@ -65,7 +65,7 @@ And here is how it's implemented. For the current post, the front matter header 
 {% raw %}
 
 custom-javascript-list:
-    - "http://code.jquery.com/jquery-3.2.1.min.js"
+    - "https://code.jquery.com/jquery-3.2.1.min.js"
 
 custom-css-list:
      - "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"

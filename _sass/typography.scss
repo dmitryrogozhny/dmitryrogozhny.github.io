@@ -90,14 +90,14 @@ h3 + p {
     Lists
 */
 ol, ul {
-    padding-left: .2rem;
-    margin: .2rem 0 .2rem 1.1rem;
+    padding-left: 0;
+    margin: .2rem 0 .2rem 1.3rem;
 
     line-height: $text-line-height;
 }
 
 li {
-    padding-left: .5rem;
+    padding-left: 0;
     margin-bottom: .5rem;
 }
 

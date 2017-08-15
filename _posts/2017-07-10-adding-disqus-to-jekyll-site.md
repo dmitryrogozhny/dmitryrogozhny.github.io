@@ -5,6 +5,7 @@ date:   2017-07-10 12:00
 
 published: true
 
+series: Adding Anything to Jekyll
 tags: [jekyll, disqus]
 ---
 

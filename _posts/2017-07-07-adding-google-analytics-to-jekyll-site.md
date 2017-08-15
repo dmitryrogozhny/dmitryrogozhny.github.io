@@ -5,6 +5,7 @@ date:   2017-07-07 12:00
 
 published: true
 
+series: Adding Anything to Jekyll
 tags: [jekyll, google analytics]
 ---
 

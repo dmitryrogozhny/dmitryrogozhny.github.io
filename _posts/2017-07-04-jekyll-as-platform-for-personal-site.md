@@ -27,7 +27,7 @@ Cons that I keep in mind:
 3.	**No built-in social features**---there are no social features built in, such as comments, likes/shares buttons. That makes it harder for your audience to find your site in the first place. You need to think about visibility in search engines and share links to your site via social networks.
 
 Here's a number of site templates available for different platforms on [ThemeForest.com](https://themeforest.net/category/all). Compare a number of WordPress and Jekyll templates.
-![themeforest themes]({{site.baseurl}}\assets\jekyll-themes-on-themeforest.png)
+![themeforest themes]({{site.baseurl}}/assets/jekyll-themes-on-themeforest.png)
 
 These drawbacks won’t be a huge problem for me, as I plan to start small and implement the site design by myself. I don’t plan any customizations to Jekyll so I won’t need to learn Ruby syntax.
 

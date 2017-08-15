@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  How to Add Custom Script to a Single Post in Jekyll
+title:  How to Add Custom Script to Single Post in Jekyll
 date:   2017-08-02 12:00
 
+series: Adding Anything to Jekyll
 tags: [jekyll]
 
 image: /assets/how-to-add-custom-script-header.png

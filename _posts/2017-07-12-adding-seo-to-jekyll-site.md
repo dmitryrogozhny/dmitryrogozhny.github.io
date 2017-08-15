@@ -3,16 +3,17 @@ layout: post
 title:  Adding SEO to Jekyll Site
 date:   2017-07-12 12:00
 
+series: Adding Anything to Jekyll
 tags: [jekyll]
 ---
 
 To provide more information to search engines, I've used [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin.
 
 Before activating the plugin, I've checked my site with the SEO-audit tool [SEOSiteCheckup](https://seositecheckup.com). Here's the summary of the audit:
-![SEO Site Checkup without jekyll-seo-tag]({{ site.baseurl }}\assets\adding-seo-tag-to-jekyll-site-no-seo-tag.png)
+![SEO Site Checkup without jekyll-seo-tag]({{ site.baseurl }}/assets/adding-seo-tag-to-jekyll-site-no-seo-tag.png)
 
 Several errors relate to missing `<meta>` tags:
-![missing meta tags]({{ site.baseurl }}\assets\adding-seo-tag-to-jekyll-site-errors.png)
+![missing meta tags]({{ site.baseurl }}/assets/adding-seo-tag-to-jekyll-site-errors.png)
 
 The `jekyll-seo-tag` plugin renders `<meta>` tags that help search engines to better describe your page. Additionally, it adds `<meta>` tags specific to social networks. All this make your pages more accessible for your visitors.
 
@@ -49,7 +50,7 @@ After the plugin activation, `<meta>` tags got added to pages. For example, for 
 You can find the descriptio of tags added at the [plugins page](https://github.com/jekyll/jekyll-seo-tag#what-it-does).
 
 Here's the second run of the audit tool after the plugin actiovation:
-![SEO Site Checkup with jekyll-seo-tag]({{ site.baseurl }}\assets\adding-seo-tag-to-jekyll-site.png)
+![SEO Site Checkup with jekyll-seo-tag]({{ site.baseurl }}/assets/adding-seo-tag-to-jekyll-site.png)
 
 As you can see it got better. There's much more to SEO than providing `<meta>` tags, but that would be enough for me for now. You can check your site in the same way to see where your site stands.
 

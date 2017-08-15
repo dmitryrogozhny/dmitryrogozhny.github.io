@@ -31,7 +31,7 @@ I ended up selecting Github Pages due to a better GitHub integration.
 
 ## Configuring GitHub Pages
 As I've already created a [GitHub repository]( https://github.com/dmitryrogozhny/dmitryrogozhny.github.io) for the site, so I configured it to use my custom domain name. Here’s the GitHub Pages section settings for the repository:
-![GitHub repository settings]({{ site.baseurl }}\assets\github-githubpages-settings.png)
+![GitHub repository settings]({{ site.baseurl }}/assets/github-githubpages-settings.png)
 
 Additionally, I've created and committed into the repository the `CNAME` file with the content of `dmitryrogozhny.com` in it.
 
@@ -41,15 +41,15 @@ After that, the site became available at both [http://dmitryrogozhny.com](http:/
 GitHub Pages does not support HTTPS connections for custom domains. In order to configure HTTPS for the site with a custom domain name, I [configured the connection](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/) via a CloudFlare CDN provider. CloudFlare provides a free plan that allows to setup a custom domain, HTTPS connections, and caching.
 
 My CloudFlare configuration for DNS looks like this:
-![CloudFlare domain settings]({{ site.baseurl }}\assets\cloudflare-domain-settings.png)
+![CloudFlare domain settings]({{ site.baseurl }}/assets/cloudflare-domain-settings.png)
 
 ## Configuring Domain Settings
 As part of configuring CloudFlare to work with my custom domain, I had to specify its nameservers in the GoDaddy administration panel. So in GoDaddy administration interface I ended up with the configuration like below:
-![GoDaddy domain settings]({{ site.baseurl }}\assets\godaddy-domain-settings.png)
+![GoDaddy domain settings]({{ site.baseurl }}/assets/godaddy-domain-settings.png)
 
 ## Testing the Final Configuration
 With all the configuration applied, I've navigated to [https://dmitryrogozhny.com](https://dmitryrogozhny.com) to see the first version of the site.
-![first version of the site]({{ site.baseurl }}\assets\personal-site-v1.png)
+![first version of the site]({{ site.baseurl }}/assets/personal-site-v1.png)
 
 **It's alive!**
 

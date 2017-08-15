@@ -29,6 +29,9 @@
                     </span>
                 </li> 
                 <span class="separator">·</span>
+            {% comment %}
+                Increment the index and use it for list items.
+            {% endcomment %}
             {% assign index = index | plus:1 %}
             {% endif %}
         {% endfor %}

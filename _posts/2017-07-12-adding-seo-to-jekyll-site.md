@@ -3,6 +3,8 @@ layout: post
 title:  Adding SEO to Jekyll Site
 date:   2017-07-12 12:00
 
+image: "/assets/adding-seo-tag-to-jekyll-site-no-seo-tag.png"
+
 series: Adding Anything to Jekyll
 tags: [jekyll]
 ---

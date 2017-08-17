@@ -1,0 +1,85 @@
+.social-buttons {
+
+    $button-link-color: #000;
+    padding-bottom: 1rem;
+
+    .social-button {
+        color: $button-link-color;
+        display: inline;
+        text-decoration: none;
+        margin-right: .2rem;
+
+        padding: 3px 8px 5px 5px;
+        border-radius: 2px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .1);
+        }
+
+        &:visited {
+            color: $button-link-color;
+        }
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+
+            vertical-align: bottom;
+        }
+
+        span {
+            font-size: $tertiary-info-font-size;
+            // move text closer to an icon
+            margin-left: -.1rem;
+        }
+
+        svg path {
+            transition: fill .2s;
+            transition-timing-function: ease-out;
+        }
+
+        svg rect {
+            transition: fill .2s;
+            transition-timing-function: ease-out;
+        }
+
+        transition: color .25s;
+        transition-timing-function: ease-out;
+    }
+
+    // Define specific fill color for each social network
+    .facebook {
+        &:hover {
+            color: #3c5a99;
+
+            svg path:first-child {
+                fill: #3c5a99;
+            }
+        }
+    }
+
+    .linkedin {
+        svg rect {
+            fill:#000;
+        }
+
+        &:hover {
+            color: #0083be;
+
+            svg rect {
+                fill:#0083be;
+            }
+        }
+
+    }
+
+    .twitter {
+        &:hover {
+            color: #1da1f2;
+
+            svg path {
+                fill: #1da1f2;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+# The following placeholders are supported for a sharer url:
+# - <url> - replaced with the current page url;
+# - <title> - replaced with the title;
+# - <twitter> - replaced with the Twitter user name, defined by site.twitter_username variable
+- title: twitter
+  verb: Tweet
+  svg: twitter.svg
+  url: https://twitter.com/intent/tweet?text=<title>&via=<twitter>&url=<url>
+
+- title: facebook
+  verb: Share
+  svg: facebook.svg
+  url: https://www.facebook.com/sharer/sharer.php?u=<url>
+
+- title: linkedin
+  verb: Share
+  svg: linkedin.svg
+  url: https://www.linkedin.com/shareArticle?mini=true&title=<title>&url=<url>

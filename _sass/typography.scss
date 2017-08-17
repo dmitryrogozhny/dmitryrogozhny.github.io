@@ -144,3 +144,8 @@ a {
     color: rgba($text-color, .8);
     font-size: $tertiary-info-font-size;
 }
+
+// Style to limit the width of a code highlight, adds horizontal scroll, when a code is longer that 100% width.
+figure.highlight {
+    overflow-x: auto;
+ }

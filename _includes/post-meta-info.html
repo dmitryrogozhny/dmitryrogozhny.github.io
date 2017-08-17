@@ -1,0 +1,14 @@
+{% comment %}
+    Renders a date of publication, and tags
+{% endcomment %}
+<div class="tertiary-info post-meta-info">
+    <date>
+        {{ page.date | date: "%B %d, %Y"}}
+    </date> in 
+    {% for tag in page.tags %}
+        {{ tag }}
+        {% if forloop.last == false %}
+            ,
+        {% endif %}
+    {% endfor %}
+</div>

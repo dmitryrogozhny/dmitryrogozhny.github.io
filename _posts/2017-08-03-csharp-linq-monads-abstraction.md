@@ -8,7 +8,7 @@ tags: [c#, functional programming]
 
 I want to show you a little trick. If you are a C# developer looking to learn some functional programming, this post might be interesting for you.
 
-![Here's some abstraction](http://geekandpoke.typepad.com/.a/6a00d8341d3df553ef016767875265970b-pi)
+![Here's some abstraction](/assets/csharp-linq-monads-abstraction-geek-and-poke.jpg)
 <span class="tertiary-info" style="text-align: right; width: 100%; display: block;">
     [geek and poke comic strip](http://geekandpoke.typepad.com/geekandpoke/2012/06/abstraction.html)
 </span>

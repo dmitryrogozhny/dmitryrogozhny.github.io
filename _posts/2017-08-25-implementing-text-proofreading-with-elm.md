@@ -3,6 +3,7 @@ layout: post
 title:  "Implementing Simple Text Proofreading with Elm"
 date:   2017-08-25 12:00
 
+series: "Implementing text proofreading with Elm"
 image: /assets/implementing-text-proofreading-part-1-hero.jpg
 tags: [elm, functional programming]
 ---

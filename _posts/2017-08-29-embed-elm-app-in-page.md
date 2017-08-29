@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Embedding Elm App in Page"
-date:   2017-08-28 12:00
+date:   2017-08-29 11:00
 
 image: /assets/implementing-text-proofreading-part-4-hero.jpg
 series: "Implementing text proofreading with Elm"

@@ -19,7 +19,7 @@ $header1-font-size: 3rem;
 $header2-font-size: 2rem;
 $header3-font-size: 1.5rem;
 
-$text-line-height: 1.45;
+$text-line-height: 1.5;
 
 $page-header-font-size: 5rem;
 
@@ -33,7 +33,7 @@ html {
 
     // increase font sizes on larger screens
     @media screen and (min-width: $breakpoint-small) {
-        font-size: $text-font-size * 1.2;
+        font-size: $text-font-size * 1.1;
     }
 }
 

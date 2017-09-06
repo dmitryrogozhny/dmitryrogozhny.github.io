@@ -143,3 +143,11 @@ $menu-font-line-height: 2.5rem;
         color: $menu-item-color-active;
     }
 }
+
+.menu__item_disabled {
+    color: rgba($text-color, .4);
+
+    &:hover {
+        color: rgba($text-color, .4);
+    }
+}

@@ -4,7 +4,7 @@
         - uses data.menu (i.e. _data\menu.yml file) to render menu items
 {% endcomment %}
 <nav class="menu">
-    <div class="logo">        
+    <div class="logo">
         {% comment %}
             Check whether the current page is a home page:
             - yes - do not render a link to itself;
@@ -30,22 +30,26 @@
         <ul class="menu__items">
             {% for item in site.data.menu %}
                 <li>
-                    {% comment %}
+                    {% if item.disabled == true %}
+                        <a class="menu__item menu__item_disabled">{{ item.title }}</a>
+                    {% else %}
+                        {% comment %}
                         Logic to highlight menu items in a menu.
 
                         Split the current page url with the menu item url, and check the size of the array:
                             - if size is 0 - the current page url is the same as menu item url: highlight menu item, but do not make item a link. E.g. "/blog/" and "/blog/".
                             - if size is 1 - the current page url is not related to the menu item url: do not highlight menu item, render menu item as a link. E.g. "/blog/" and "/projects/".
                             - else - the current page url is under the menu item url: highlight menu item, and render menu item as a link. E.g. "/blog/" and "/blog/post1/".
-                    {% endcomment %}
+                        {% endcomment %}
 
-                    {% assign urlPartsSize = (page.url | split: item.url) | size %}
-                    {% if urlPartsSize == 0 %}
-                        <a class="menu__item menu__item_active">{{ item.title }}</a>
-                    {% elsif urlPartsSize == 1 %}
-                        <a href="{{ item.url }}" class="menu__item">{{ item.title }}</a>                        
-                    {% else %}
-                        <a href="{{ item.url }}" class="menu__item menu__item_active">{{ item.title }}</a>
+                        {% assign urlPartsSize = (page.url | split: item.url) | size %}
+                        {% if urlPartsSize == 0 %}
+                            <a class="menu__item menu__item_active">{{ item.title }}</a>
+                        {% elsif urlPartsSize == 1 %}
+                            <a href="{{ item.url }}" class="menu__item">{{ item.title }}</a>
+                        {% else %}
+                            <a href="{{ item.url }}" class="menu__item menu__item_active">{{ item.title }}</a>
+                        {% endif %}
                     {% endif %}
                 </li>
             {% endfor %}

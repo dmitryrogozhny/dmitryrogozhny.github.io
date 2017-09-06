@@ -3,6 +3,7 @@
 
 - title: Projects
   url: /projects/
+  disabled: true
 
 - title: Contact
   url: /about/

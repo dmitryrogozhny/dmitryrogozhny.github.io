@@ -13,15 +13,14 @@
 
     {% for button in site.data.social-buttons %}
 
-        {% assign button_url = button.url 
+        {% assign button_url = button.url
                              | replace: text_placeholder, page.title
                              | replace: url_placeholder, page_url
                              | replace: twitter_placeholder, site.twitter_username
                              | uri_escape
-        %}        
+        %}
 
-
-        <a href="{{ button_url }}" target="_blank" class="social-button {{ button.title }} js-social-buttons">
+        <a href="{{ button_url }}" target="_blank" class="social-button {{ button.title }} {% if button.noPopup != true %}js-social-buttons{% endif %}">
             <span>
                 {% include social-buttons/{{ button.svg }} %}
                 <span>{{ button.verb }}</span>

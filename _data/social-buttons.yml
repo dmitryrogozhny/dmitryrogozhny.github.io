@@ -11,6 +11,7 @@
   verb: Reddit
   svg: reddit.svg
   url: http://www.reddit.com/submit?url=<url>&title=<title>
+  noPopup: true
 
 - title: facebook
   verb: Share

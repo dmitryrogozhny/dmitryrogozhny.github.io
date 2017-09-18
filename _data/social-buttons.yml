@@ -7,6 +7,11 @@
   svg: twitter.svg
   url: https://twitter.com/intent/tweet?text=<title>&via=<twitter>&url=<url>
 
+- title: reddit
+  verb: Reddit
+  svg: reddit.svg
+  url: http://www.reddit.com/submit?url=<url>&title=<title>
+
 - title: facebook
   verb: Share
   svg: facebook.svg

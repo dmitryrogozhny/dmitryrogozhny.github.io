@@ -82,4 +82,14 @@
             }
         }
     }
+
+    .reddit {
+        &:hover {
+            color: #FF4500;
+
+            svg path {
+                fill: #FF4500;
+            }
+        }
+    }
 }

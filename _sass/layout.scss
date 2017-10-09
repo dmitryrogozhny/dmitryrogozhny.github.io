@@ -41,5 +41,11 @@ body {
 }
 
 .footer {
-    height: 2rem;
+    height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    padding-bottom: 1rem;
 }

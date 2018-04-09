@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://dmitryrogozhny.com
 twitter_username: dro_stories
 github_username:  dmitryrogozhny
-description: > 
+description: >
   Software Development described
 
 google_analytics: UA-100633158-1
@@ -24,7 +24,7 @@ permalink: /blog/:title
 markdown: kramdown
 theme: minima
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag

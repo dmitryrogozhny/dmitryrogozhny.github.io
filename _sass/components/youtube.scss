@@ -1,0 +1,8 @@
+.youtube {
+    width: 100%;
+    height: 315px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        width: 560px;
+    }
+}

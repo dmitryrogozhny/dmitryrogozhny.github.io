@@ -8,15 +8,18 @@
 <body>
     <div class="site">
         {% include header.html %}
-        
+
         <main class="main">
             {{ content }}
         </main>
-        
+
         {% include footer.html %}
     </div>
 
-    <script src="/js/main.js?v=1"></script>
+    {% comment %} Minified version of the js/main.js file {% endcomment %}
+    <script>
+        !function(){!function(e,t,n){var i=document.querySelectorAll(e);if(i)for(var o=0;o<i.length;o++)i[o].addEventListener("click",function(e){var i,o,r,s,a;e.preventDefault(),i=this.href,o=t,r=n,s=screen.width/2-o/2,a=screen.height/2-r/2,window.open(i,"","menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width="+o+",height="+r+",top="+a+",left="+s)})}(".js-social-buttons",750,500)}(),function(e,t,n){"use strict";var i=function(e,t){var n,i;return function(){var o=this,r=arguments,s=+new Date;n&&s<n+e?(clearTimeout(i),i=setTimeout(function(){n=s,t.apply(o,r)},e)):(n=s,t.apply(o,r))}},o=!1,r=!1,s=!1,a="unloaded",d=!1,u=function(){if(!d||!t.body.contains(d)||"loaded"==d.disqusLoaderStatus)return!0;var n,i;e.pageYOffset,n=d,i=n.getBoundingClientRect(),i.top,t.body.scrollTop,i.left,t.body.scrollLeft;if(!function(n,i,o){i=i||0,o=o||"visible";var r=n.getBoundingClientRect(),s=Math.max(t.documentElement.clientHeight,e.innerHeight),a=r.bottom-i<0,d=r.top-s+i>=0;return"above"===o?a:"below"===o?d:!a&&!d}(d,-100))return!0;var o,u,l,c=t.getElementById("disqus_thread");c&&c.removeAttribute("id"),d.setAttribute("id","disqus_thread"),d.disqusLoaderStatus="loaded","loaded"==a?DISQUS.reset({reload:!0,config:r}):(e.disqus_config=r,"unloaded"==a&&(a="loading",o=s,u=function(){a="loaded"},(l=t.createElement("script")).src=o,l.async=!0,l.setAttribute("data-timestamp",+new Date),l.addEventListener("load",function(){"function"==typeof u&&u()}),(t.head||t.body).appendChild(l)))};e.addEventListener("scroll",i(o,u)),e.addEventListener("resize",i(o,u)),e.disqusLoader=function(e,n){n=function(e,t){var n,i={};for(n in e)Object.prototype.hasOwnProperty.call(e,n)&&(i[n]=e[n]);for(n in t)Object.prototype.hasOwnProperty.call(t,n)&&(i[n]=t[n]);return i}({laziness:1,throttle:250,scriptUrl:!1,disqusConfig:!1},n),n.laziness,o=n.throttle,r=n.disqusConfig,s=!1===s?n.scriptUrl:s,(d="string"==typeof e?t.querySelector(e):"number"==typeof e.length?e[0]:e)&&(d.disqusLoaderStatus="unloaded"),u()};disqusLoader(".disqus",{scriptUrl:"//{{ site.disqus.shortname }}.disqus.com/embed.js",disqusConfig:function(){this.page.url="{{ site.url }}{{ page.url }}",this.page.identifier="{{ site.url }}{{ page.url }}"}})}(window,document);
+    </script>
 </body>
 
 </html>

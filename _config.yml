@@ -24,6 +24,9 @@ permalink: /blog/:title
 markdown: kramdown
 theme: minima
 
+sass:
+    style: compressed
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

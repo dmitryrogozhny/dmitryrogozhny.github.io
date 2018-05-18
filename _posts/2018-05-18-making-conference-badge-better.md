@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Making Conference Badges Better"
+title:  "Making Conference Badge Better"
 date:   2018-05-18 12:00
 
 image: "/assets/making-conference-badge-better-hero.png"

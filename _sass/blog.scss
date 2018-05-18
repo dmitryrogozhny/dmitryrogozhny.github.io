@@ -8,11 +8,11 @@
         border: 1px solid rgba(0, 0, 0, 0.2);
     }
 
-    .image-border {
-        border: 1px solid rgba(0, 0, 0, 0.2);
-    }
-
-    .image-shadow {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // show the image with the original size on desktop, and 100% width on mobile
+    @media screen and (min-width: $breakpoint-small) {
+        .image-original-size {
+            width: auto;
+            height: auto;
+        }
     }
 }

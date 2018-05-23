@@ -10,7 +10,15 @@
 
     // show the image with the original size on desktop, and 100% width on mobile
     @media screen and (min-width: $breakpoint-small) {
-        .image-original-size {
+        .image--original-size-small {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    // show the image with the original size on desktop, and 100% width on mobile and notepads
+    @media screen and (min-width: $breakpoint-medium) {
+        .image--original-size-medium {
             width: auto;
             height: auto;
         }

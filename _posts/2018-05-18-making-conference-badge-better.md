@@ -12,7 +12,7 @@ A couple of weeks ago, I've visited the [HI-Tech Nation](https://probusiness.io/
 
 As usual with conferences, every participant has been supplied with a badge. Here's a badge from the conference (not mine, but you get the idea):
 
-![HI-TECH Nation badge example]({{ site.baseurl }}/assets/making-conference-badge-better-example.jpg){: .image-original-size}
+![HI-TECH Nation badge example]({{ site.baseurl }}/assets/making-conference-badge-better-example.jpg){: .image--original-size-small}
 
 In this post, I'd like to reason about how the conference badge could be made better. The goal is not to brag about the conference or its organizers. They did an excellent job by bringing together a great set of speakers. I just want to perform a thought experiment on how such a small part of the conference as badges can be made better.
 
@@ -41,7 +41,7 @@ __Problem__: the length of the lanyard is about 90 cm. I'm about 175 cm high, wh
 
 __How to fix__: Make lanyard 30 cm shorter. This would make the distance between a chin and a badge around 15--20 cm, which would be around chest level. This is much more comfortable to wear and to scan.
 
-![lanyard length example]({{ site.baseurl }}/assets/making-conference-badge-better-lanyard-length.jpg){: .image-original-size}
+![lanyard length example]({{ site.baseurl }}/assets/making-conference-badge-better-lanyard-length.jpg){: .image--original-size-small}
 
 ### 3. Do not use Roboto
 __Problem__: [Roboto](https://fonts.google.com/specimen/Roboto) is a great typeface for UI interfaces, but it doesn't look that good in a large bold font on badges. And my personal opinion is that Roboto's Cyrillic is not beautiful.

@@ -3,7 +3,7 @@ $menu-item-color-hover: $link-color-hover;
 $menu-item-color-focus: $link-color-focus;
 $menu-item-color-active: #ea4300;
 
-$menu-font-size: .9rem;
+$menu-font-size: 1rem;
 $menu-font-line-height: 2.5rem;
 
 /*
@@ -11,17 +11,9 @@ $menu-font-line-height: 2.5rem;
 */
 .menu {
     position: relative;
-    display: block;
 
-    padding-top: .5em;
-
-    /*
-        for larger screens fit logo and menu on a single line.
-    */
-    @media screen and (min-width: $breakpoint-small) {
-        display: flex;
-        flex-direction: row;
-    }
+    display: flex;
+    flex-direction: row;
 }
 
 /*
@@ -77,7 +69,7 @@ $menu-font-line-height: 2.5rem;
         padding-left: .3em;
     }
 
-    .logo__title_active {
+    .logo__title--active {
         color: $logo-color-active;
     }
 }
@@ -90,14 +82,10 @@ $menu-font-line-height: 2.5rem;
     display: flex;
     flex-direction: row;
 
-    padding: .2em 0 0 0;
+    padding: 0 0 0 1em;
     margin: 0;
 
     list-style: none;
-
-    @media screen and (min-width: $breakpoint-small) {
-        padding: 0 0 0 1em;
-    }
 }
 
 .menu__item {
@@ -128,7 +116,7 @@ $menu-font-line-height: 2.5rem;
 /* add animation to make border-bottom appear with animation */
 @include animation-border-bottom-appear($menu-item-color-active);
 
-.menu__item_active {
+.menu__item--active {
     color: $menu-item-color-active;
     border-bottom: 1px solid $menu-item-color-active;
 
@@ -144,7 +132,7 @@ $menu-font-line-height: 2.5rem;
     }
 }
 
-.menu__item_disabled {
+.menu__item--disabled {
     color: rgba($text-color, .4);
 
     &:hover {

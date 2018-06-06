@@ -13,7 +13,7 @@
 
         {% if page.url == "/" %}
             <div class="logo__image"></div>
-            <div class="logo__title logo__title_active">
+            <div class="logo__title logo__title--active">
                 {{ site.author }}
             </div>
         {% else %}
@@ -31,7 +31,7 @@
             {% for item in site.data.menu %}
                 <li>
                     {% if item.disabled == true %}
-                        <a class="menu__item menu__item_disabled">{{ item.title }}</a>
+                        <a class="menu__item menu__item--disabled">{{ item.title }}</a>
                     {% else %}
                         {% comment %}
                         Logic to highlight menu items in a menu.
@@ -44,11 +44,11 @@
 
                         {% assign urlPartsSize = (page.url | split: item.url) | size %}
                         {% if urlPartsSize == 0 %}
-                            <a class="menu__item menu__item_active">{{ item.title }}</a>
+                            <a class="menu__item menu__item--active">{{ item.title }}</a>
                         {% elsif urlPartsSize == 1 %}
                             <a href="{{ item.url }}" class="menu__item">{{ item.title }}</a>
                         {% else %}
-                            <a href="{{ item.url }}" class="menu__item menu__item_active">{{ item.title }}</a>
+                            <a href="{{ item.url }}" class="menu__item menu__item--active">{{ item.title }}</a>
                         {% endif %}
                     {% endif %}
                 </li>

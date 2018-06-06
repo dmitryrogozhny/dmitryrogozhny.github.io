@@ -1,9 +1,9 @@
 - title: Blog
   url: /blog/
 
-- title: Projects
-  url: /projects/
-  disabled: true
+# - title: Projects
+#   url: /projects/
+#   disabled: true
 
-- title: Contact
-  url: /about/
+# - title: Contact
+#   url: /about/

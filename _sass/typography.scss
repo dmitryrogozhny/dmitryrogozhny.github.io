@@ -13,15 +13,24 @@ $link-color-hover: #a80000;
 $link-color-focus: #ffbf47;
 $link-color-active: #ea4300;
 
-$text-font-size: 1rem;
-$tertiary-info-font-size: .8 * $text-font-size;
-$header1-font-size: 3rem;
-$header2-font-size: 2rem;
-$header3-font-size: 1.5rem;
+$text-font-size--small: .8rem;
+$text-font-size--medium: 1rem;
+$text-font-size--large: 1.1rem;
+
+$tertiary-info-font-size--small: .8 * $text-font-size--small;
+$tertiary-info-font-size--medium: .8 * $text-font-size--medium;
+$tertiary-info-font-size--large: .8 * $text-font-size--large;
+
+$text-font-size: $text-font-size--small;
+$tertiary-info-font-size: $tertiary-info-font-size--small;
+
+$header1-font-size: 3 * $text-font-size;
+$header2-font-size: 2 * $text-font-size;
+$header3-font-size: 1.5 * $text-font-size;
 
 $text-line-height: 1.5;
 
-$page-header-font-size: 5rem;
+$page-header-font-size: 5 * $text-font-size;
 
 /*
     Global settings
@@ -31,9 +40,18 @@ html {
     font-size: $text-font-size;
     color: $text-color;
 
-    // increase font sizes on larger screens
+    // increase font sizes on tablet screens
     @media screen and (min-width: $breakpoint-small) {
-        font-size: $text-font-size * 1.1;
+        $text-font-size: $text-font-size--medium;
+        $tertiary-info-font-size: $tertiary-info-font-size--medium;
+        font-size: $text-font-size;
+    }
+
+    // increase font sizes on larger screens
+    @media screen and (min-width: $breakpoint-medium) {
+        $text-font-size: $text-font-size--large;
+        $tertiary-info-font-size: $tertiary-info-font-size--large;
+        font-size: $text-font-size;
     }
 }
 

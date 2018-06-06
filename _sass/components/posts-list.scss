@@ -5,4 +5,25 @@
         padding-left: 0;
         margin-left: 0;
     }
+
+    .posts-list__item {
+        padding-bottom: 1em;
+    }
+
+    .post-list__title {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .post-list__image {
+        width: 100%;
+        height: auto;
+
+        @media screen and (min-width: $breakpoint-small) {
+            width: 50%;
+            height: auto;
+        }
+    }
 }

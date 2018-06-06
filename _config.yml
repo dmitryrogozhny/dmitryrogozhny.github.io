@@ -1,11 +1,12 @@
 # Site settings
 author: Dmitry Rogozhny
 title: Dmitry Rogozhny
-email: dmitry@dmitryrogozhny.com
+email: drogozhny@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://dmitryrogozhny.com
 twitter_username: dro_stories
 github_username:  dmitryrogozhny
+linkedin_username: drogozhny
 description: >
   Software Development described
 

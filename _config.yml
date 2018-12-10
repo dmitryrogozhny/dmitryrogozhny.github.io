@@ -25,7 +25,7 @@ permalink: /blog/:title
 markdown: kramdown
 theme: minima
 
-excerpt_separator: "<!--more-->"
+# excerpt_separator: "<!--more-->"
 
 sass:
     style: compressed

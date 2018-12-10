@@ -9,16 +9,17 @@ tags: [typescript, javascript]
 ## Problem
 Let's consider a quick example: how would you create an object with the __`Node`__ interface?
 {% highlight typescript %}
+// define interface
 interface Node {
     value: number;
     self: Node;
 }
-
+// create object
 const node = {
     value: 0,
     self: ???,
 };
-{% endhighlight %}
+{%endhighlight%}
 
 The problem is that you need a `Node` object reference for the `self` property. And to create the object you need to specify its `self` property. And so on, and so on.
 
@@ -35,7 +36,7 @@ function createNode(): Node {
 
     return node as Node;
 }
-{% endhighlight %}
+{%endhighlight%}
 
 ```Partial<Node>``` returns a type that has got the same properties as Node, but those properties are optional. This allows to instanciate the object without specifying the `self` property right away. Once the object has been created, we can reference the object for the `self` property.
 

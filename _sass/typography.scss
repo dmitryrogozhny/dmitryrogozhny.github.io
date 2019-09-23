@@ -13,6 +13,10 @@ $link-color-hover: #a80000;
 $link-color-focus: #ffbf47;
 $link-color-active: #d33c00;
 
+// colors for custom links for services
+$intranet-configuration-service-color: #d83b01;
+$custom-development-service-color: #9b0062;
+
 $text-font-size--small: .8rem;
 $text-font-size--medium: 1rem;
 $text-font-size--large: 1.1rem;
@@ -103,7 +107,6 @@ h2 + p {
 h3 + p {
     margin-top: .2rem;
 }
-
 
 /*
     Lists

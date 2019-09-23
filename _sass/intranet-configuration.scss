@@ -1,0 +1,76 @@
+.intranet-configuration {
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-large) {
+        width: 70%;
+    }
+
+    .table-of-content {
+        display: none;
+
+        @media screen and (min-width: $breakpoint-large) {
+            display: block;
+            position: fixed;
+            left: 75%;
+
+            font-size: .8rem;
+            font-family: $display-font;
+        }
+
+        a {
+            // make link hitbox bigger
+            padding: 5px 5px 5px 0px;
+        }
+    }
+
+    .screenshot {
+        width: 100%;
+        height: auto;
+    }
+
+    .screenshot--border {
+        box-shadow: 0 0 0 1px #E0E0E0;
+        border-radius: .3em;
+
+        // width: 100vw;
+        // position: relative;
+        // left: 50%;
+        // right: 50%;
+        // margin-left: -50vw;
+        // margin-right: -50vw;
+    }
+
+    .screenshot--clipped {
+        height: auto;
+
+        @media screen and (min-width: $breakpoint-large) {
+            max-height: 50vh;
+            overflow-y: scroll;
+        }
+
+        position: relative;
+
+        box-shadow: 0 0 0 1px #E0E0E0;
+        border-radius: .3em;
+
+        .screenshot {
+            box-shadow: 0 0 0 0;
+            border-radius: 0px;
+        }
+    }
+
+    .intranet-configuration--intro {
+        p {
+            font-size: 120%;
+            line-height: 120%;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        :last-child {
+            margin-bottom: 1rem;
+        }
+    }
+
+
+}

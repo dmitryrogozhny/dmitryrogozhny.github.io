@@ -1,0 +1,34 @@
+{% comment %}
+Renders a description of a service.
+Parameters:
+- image - url of the image
+- webpImage - optimized version of the image in WebP format
+- imageAlt - alt attribute for the image
+- class - additional CSS class to use for a service description
+- title - service title
+- description - service description
+- link - url for the detailed information page
+{% endcomment %}
+
+<div class="service-card">
+    <a href="{{include.link}}" class="service-link {{include.class}}">
+        <h2 class="service-title {{include.class}}">
+            {{include.title}}
+        </h2>
+    </a>
+    <a href="{{include.link}}">
+        <picture>
+            <source srcset="{{include.webpImage}}" type="image/webp">
+            <source srcset="{{include.image}}" type="image/jpeg">
+            <img src="{{include.image}}" class="service-hero-image" alt="{{include.imageAlt}}" />
+        </picture>
+    </a>
+
+    <p class="service-description">
+        {{include.description}}
+    </p>
+
+    <a href="{{include.link}}" class="service-link {{include.class}}">
+        LEARN MORE ➡
+    </a>
+</div>

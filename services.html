@@ -1,0 +1,39 @@
+---
+layout: page
+title: Services
+permalink: /services/
+---
+
+<h1 class="page-header">
+    Services
+</h1>
+
+<div class="services">
+    {% assign intranet_image = site.baseurl | append: "/assets/intranet-configuration/intranet-configuration.jpg" %}
+    {% assign intranet_webp_image = site.baseurl | append: "/assets/intranet-configuration/intranet-configuration.webp" %}
+    {% assign intranet_link = site.baseurl | append: "/services/intranet-configuration" %}
+
+    {% include service-card.html
+        image=intranet_image
+        webpImage=intranet_webp_image
+        imageAlt="intranet configuration preview"
+        class="intranet__color"
+        title="Intranet Configuration"
+        description="SharePoint intranet configuration using out of box features."
+        link=intranet_link
+    %}
+
+    {% assign development_image = site.baseurl | append: "/assets/custom-development/custom-development.jpg" %}
+    {% assign development_webp_image = site.baseurl | append: "/assets/custom-development/custom-development.webp" %}
+    {% assign development_link = site.baseurl | append: "/services/development" %}
+
+    {% include service-card.html
+        image=development_image
+        webpImage=development_webp_image
+        imageAlt="custom development preview"
+        class="custom-development__color"
+        title="Office 365 Development"
+        description="Custom development using SharePoint and Office 365."
+        link=development_link
+    %}
+</div>

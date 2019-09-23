@@ -1,0 +1,56 @@
+.services {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        padding-bottom: 3rem;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            width: 46%;
+        }
+
+        .service-title {
+            font-size: 2rem;
+            margin-top: 0;
+
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 2.8rem;
+                margin-top: .3rem;
+            }
+        }
+
+        .service-description {
+            margin: 0.4rem 0 1rem 0;
+        }
+
+        .service-hero-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .service-link {
+            font-weight: bold;
+            font-size: 1rem;
+
+            display: block;
+            padding: 0;
+        }
+    }
+
+    .intranet__color {
+        color: $intranet-configuration-service-color;
+    }
+
+    .custom-development__color {
+        color: $custom-development-service-color;
+    }
+}

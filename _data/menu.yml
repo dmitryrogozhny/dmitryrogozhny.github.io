@@ -1,9 +1,13 @@
+- title: Services
+  url: /services/
+  childItems:
+    - title: Intranet Configuration
+      url: /services/intranet-configuration/
+    - title: Office 365 Development
+      url: /services/development/
+
 - title: Blog
   url: /blog/
 
-# - title: Projects
-#   url: /projects/
-#   disabled: true
-
-# - title: Contact
-#   url: /about/
+- title: About
+  url: /about/

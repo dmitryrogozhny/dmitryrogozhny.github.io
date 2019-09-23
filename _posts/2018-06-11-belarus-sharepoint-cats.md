@@ -3,7 +3,7 @@ layout: post
 title:  All the SharePoint Cats
 date:   2018-06-11 12:00
 
-image: "/assets/all-the-sharepoint-cats-hero.png"
+image: "/assets/all-the-sharepoint-cats-hero.jpg"
 
 tags: [sharepoint, office 365]
 ---

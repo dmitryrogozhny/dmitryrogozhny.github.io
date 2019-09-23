@@ -7,14 +7,13 @@
     }
 
     .posts-list__item {
-        padding-bottom: 1em;
+        padding-bottom: 0;
     }
 
     .post-list__title {
-        color: $text-color;
-        text-decoration: none;
-        font-size: 1.1rem;
-        font-weight: 700;
+        font-size: .85rem;
+        line-height: 1.15rem;
+        font-weight: 400;
     }
 
     .post-list__image {
@@ -22,7 +21,7 @@
         height: auto;
 
         @media screen and (min-width: $breakpoint-small) {
-            width: 50%;
+            width: 30%;
             height: auto;
         }
     }

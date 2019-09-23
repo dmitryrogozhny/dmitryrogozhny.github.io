@@ -163,6 +163,23 @@ a {
     font-size: $tertiary-info-font-size;
 }
 
+// Style for a link that keeps its color even when visited
+.link--stable {
+    color: $link-color;
+
+    &:visited {
+        color: $link-color;
+    }
+
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+.link--no-decoration {
+    text-decoration: none
+}
+
 // Style to limit the width of a code highlight, adds horizontal scroll, when a code is longer that 100% width.
 figure.highlight {
     overflow-x: auto;

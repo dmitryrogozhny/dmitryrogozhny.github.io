@@ -1,0 +1,22 @@
+.about-me-short {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+
+    .intanet-configuration-service-link {
+        color: $intranet-configuration-service-color;
+        font-weight: bold;
+
+        &:hover {
+            color: $link-color-hover;
+        }
+    }
+
+    .custom-development-service-link {
+        color: $custom-development-service-color;
+        font-weight: bold;
+
+        &:hover {
+            color: $link-color-hover;
+        }
+    }
+}

@@ -2,9 +2,11 @@
 This can be site.posts or a filtered/sorted version of this list; - postsToShow - optional number of posts to display. If
 not specified, all posts will be shown. {% endcomment %}
 <div class="posts-list">
+    {% if include.title != nil && include.title != "" %}
     <h2>
         {{ include.title }}
     </h2>
+    {% endif %}
     <ul class="posts-list__items">
         {% for post in include.posts %}
         <li class="posts-list__item">

@@ -1,4 +1,4 @@
-$menu-item-color: $header-color;
+$menu-item-color: #005ea5;
 $menu-item-color-hover: $link-color-hover;
 $menu-item-color-focus: $link-color-focus;
 $menu-item-color-active: #ea4300;
@@ -21,8 +21,8 @@ $menu-font-line-height: 2.5rem;
 */
 .logo {
     $logo-size: 50px;
-    $logo-color: #000;
-    $logo-color-active: #000;
+    $logo-color: $menu-item-color;
+    $logo-color-active: $menu-item-color;
 
     display: flex;
     flex-direction: row;
@@ -40,17 +40,16 @@ $menu-font-line-height: 2.5rem;
 
         text-decoration: none;
 
+        // distance between home link and the rest of menu items
+        padding-right: 1em;
+
         &:visited {
             color: $logo-color;
         }
 
-        &:hover {
-            color: $menu-item-color-hover;
-        }
-
         &:focus {
             background-color: inherit;
-            outline:2px solid $menu-item-color-focus;
+            outline: 2px solid $menu-item-color-focus;
         }
     }
 
@@ -59,7 +58,10 @@ $menu-font-line-height: 2.5rem;
         height: $logo-size;
         border-radius: 50%;
 
-        background: url("../assets/logo.jpg") no-repeat center center;
+        // distance between the top of the screen and logo
+        margin-top: 10px;
+
+        background: url("../assets/logo.png") no-repeat center center;
         background-size: contain;
     }
 
@@ -67,10 +69,20 @@ $menu-font-line-height: 2.5rem;
         color: $logo-color;
         display: block;
         padding-left: .3em;
+
+        font-weight: bold;
+
+        &:hover {
+            color: $menu-item-color-hover;
+        }
     }
 
     .logo__title--active {
         color: $logo-color-active;
+
+        &:hover {
+            color: $logo-color-active;
+        }
     }
 }
 
@@ -82,7 +94,7 @@ $menu-font-line-height: 2.5rem;
     display: flex;
     flex-direction: row;
 
-    padding: 0 0 0 1em;
+    padding: 0;
     margin: 0;
 
     list-style: none;
@@ -95,7 +107,8 @@ $menu-font-line-height: 2.5rem;
     color: $menu-item-color;
     letter-spacing: .2px;
 
-    padding: .6em .4em;
+    // padding for menu items
+    padding: .6em .4em .4em .4em;
 
     text-decoration: none;
 

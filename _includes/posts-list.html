@@ -1,8 +1,20 @@
-{% comment %} Shows a list of posts. Parameters: - title - title to display for a list; - posts - list of posts to display.
-This can be site.posts or a filtered/sorted version of this list; - postsToShow - optional number of posts to display. If
-not specified, all posts will be shown. {% endcomment %}
+{% comment %}
+Shows a list of posts.
+Parameters:
+- title - title to display for a list;
+- posts - list of posts to display. This can be site.posts or a filtered/sorted version of this list;
+- postsToShow - optional number of posts to display. If not specified, all posts will be shown.
+- postsToHighlight - optional number of latest posts to show with images. If not specified, defaults to 10.
+{% endcomment %}
+
+{% assign postsToHighlight = 10 %}
+
+{% if include.postsToHighlight != nil %}
+{% assign postsToHighlight = include.postsToHighlight %}
+{% endif %}
+
 <div class="posts-list">
-    {% if include.title != nil && include.title != "" %}
+    {% if include.title != nil and include.title != "" %}
     <h2>
         {{ include.title }}
     </h2>
@@ -10,22 +22,24 @@ not specified, all posts will be shown. {% endcomment %}
     <ul class="posts-list__items">
         {% for post in include.posts %}
         <li class="posts-list__item">
+            {% if post.image != nil and forloop.index <= postsToHighlight %}
+            <div>
+                <a class="post-list__title" href="{{ post.url }}">
+                    <img class="post-list__image" src="{{ post.image }}" alt="{{ post.title }}" />
+                    {{ post.title }}
+                </a>
+            </div>
+
+            {% else %}
             <div>
                 <a class="post-list__title" href="{{ post.url }}">
                     {{ post.title }}
                 </a>
-                &nbsp;
-                <date class="tertiary-info">
-                    {{ post.date | date: "%B %d, %Y"}}
-                </date>
             </div>
-            {% if post.image != nil %}
-            <a class="post-list__title" href="{{ post.url }}">
-                <img class="post-list__image" src="{{ post.image }}" />
-            </a>
             {% endif %}
         </li>
 
-        {% if include.postsToShow != nil and forloop.index == include.postsToShow %} {% break %} {% endif %} {% endfor %}
+        {% if include.postsToShow != nil and forloop.index == include.postsToShow %} {% break %} {% endif %}
+        {% endfor %}
     </ul>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Get the Staic Bing Maps Image"
+title:  "How to Get the Static Bing Maps Image"
 date:   2019-04-29 12:00
 
 tags: [bing maps]

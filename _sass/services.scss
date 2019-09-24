@@ -31,26 +31,42 @@
             margin: 0.4rem 0 1rem 0;
         }
 
-        .service-hero-image {
-            width: 100%;
-            height: auto;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-        }
-
         .service-link {
+            &:hover {
+                .service-hero-image {
+                    transform: scale(1.02);
+                }
+            }
+
             font-weight: bold;
             font-size: 1rem;
 
             display: block;
             padding: 0;
         }
+
+        .service-hero-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+
+            transition: transform 0.125s ease-out;
+        }
     }
 
     .intranet__color {
         color: $intranet-configuration-service-color;
+
+        &:hover {
+            color: darken($intranet-configuration-service-color, 5%);
+        }
     }
 
     .custom-development__color {
         color: $custom-development-service-color;
+
+        &:hover {
+            color: darken($custom-development-service-color, 5%);
+        }
     }
 }

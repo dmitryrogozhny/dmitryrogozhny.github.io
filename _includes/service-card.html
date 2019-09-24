@@ -15,11 +15,13 @@ Parameters:
         <h2 class="service-title {{include.class}}">
             {{include.title}}
         </h2>
-        <picture>
-            <source srcset="{{include.webpImage}}" type="image/webp">
-            <source srcset="{{include.image}}" type="image/jpeg">
-            <img src="{{include.image}}" class="service-hero-image" alt="{{include.imageAlt}}" />
-        </picture>
+        <div style="overflow: hidden">
+            <picture>
+                <source srcset="{{include.webpImage}}" type="image/webp">
+                <source srcset="{{include.image}}" type="image/jpeg">
+                <img src="{{include.image}}" class="service-hero-image" alt="{{include.imageAlt}}" />
+            </picture>
+        </div>
     </a>
 
     <p class="service-description">

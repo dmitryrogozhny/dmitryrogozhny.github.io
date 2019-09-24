@@ -32,9 +32,18 @@
         }
 
         .service-link {
+            // on hover highlight link and animate image
             &:hover {
                 .service-hero-image {
-                    transform: scale(1.02);
+                    transform: scale(1.01);
+                }
+
+                .intranet__color {
+                    color: darken($intranet-configuration-service-color, 5%);
+                }
+
+                .custom-development__color {
+                    color: darken($custom-development-service-color, 5%);
                 }
             }
 
@@ -57,6 +66,7 @@
     .intranet__color {
         color: $intranet-configuration-service-color;
 
+        // on hover make link color darker
         &:hover {
             color: darken($intranet-configuration-service-color, 5%);
         }
@@ -65,6 +75,7 @@
     .custom-development__color {
         color: $custom-development-service-color;
 
+        // on hover make link color darker
         &:hover {
             color: darken($custom-development-service-color, 5%);
         }

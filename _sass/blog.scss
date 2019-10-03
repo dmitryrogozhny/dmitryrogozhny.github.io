@@ -8,6 +8,14 @@
         border: 1px solid rgba(0, 0, 0, 0.2);
     }
 
+    .image--original-size-small {
+        display: block;
+    }
+
+    .image--original-size-medium {
+        display: block;
+    }
+
     // show the image with the original size on desktop, and 100% width on mobile
     @media screen and (min-width: $breakpoint-small) {
         .image--original-size-small {

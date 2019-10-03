@@ -34,7 +34,7 @@ In most cases, it is easier to test the feature you need live to make sure that 
 
 Depending on page size and layout there is a limit on the information that will be visible to users without scrolling. It is advisable to use one column layout for your dashboard, as it will allow to show the maximum amount of data without scrolling.
 
-![Excel dashboard example]({{ site.baseurl }}/assets/2019/excel-dashboard-layout.jpg)
+![Page layout and web parts size]({{ site.baseurl }}/assets/2019/excel-dashboard-layout.jpg)
 
 Here is the max cell in an Excel workbook visible without scrolling:
 - One column layout---R29;

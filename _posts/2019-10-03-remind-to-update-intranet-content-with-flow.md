@@ -18,12 +18,12 @@ In this post, I'll describe a Flow process, that will regularly check intranet n
 ## Implementation details
 
 Here's the screenshot of the flow:
-![flow overview]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-workflow.jpg)
+![Flow overview]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-workflow.jpg)
 
 The flow runs every day. It gets the date of the last published news and checks whether it was more than a week ago. If needed, it then sends an email with a reminder.
 
 ### Initializing variables
-![flow overview]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-part-1.jpg)
+![Flow initialize variables]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-part-1.jpg)
 
 The flow triggers once a day. It sets a set of variables on start:
 - News owner email---email of a content editor responsible for news;
@@ -31,7 +31,7 @@ The flow triggers once a day. It sets a set of variables on start:
 - Recommended news frequency in days---how often news should be published.
 
 ### Calculating news last publish date
-![flow overview]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-part-2.jpg)
+![Flow calculate publish date]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-part-2.jpg)
 
 To get a last publish date for news the flow requests a list of pages from `Site Pages` library on the intranet site. The action requests one last page sorted by date with a state `PromotedState` equal to 2 (which corresponds to a published news post).
 
@@ -40,7 +40,7 @@ To get the last publish date the following expression is used: `first(body('Get_
 To the last publish date we add frequency days with the following expression: `addDays(variables('LastNewsDate'), variables('DaysWithoutNews'))`. That gives us the expected date for the next news post. This date can be in the past (we need to send a reminder) or in the future (no need to send).
 
 ### Sending email reminder
-![flow overview]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-part-3.jpg)
+![Flow send email]({{ site.baseurl }}/assets/2019/flow-reminder-to-update-content-part-3.jpg)
 
 Finally, we compare the current date with the expected date for the next news post. If the expected date is in the past, let's send an email reminder. The reminder will be sent to the intranet's news owner.
 

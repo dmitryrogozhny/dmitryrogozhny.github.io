@@ -2,7 +2,7 @@
 layout: post
 title: "Update Multi-user SharePoint Field with Flow"
 description: "Updating a multi-user field for a SharePoint document with Flow turned out to be a more complex task than I initially anticipated. Here's the solution that worked for me and approaches that didn't work."
-date: 2019-10-01 12:00
+date: 2019-10-07 12:00
 
 image: "/assets/2019/update-multi-user-field-flow-hero.jpg"
 

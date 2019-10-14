@@ -75,6 +75,13 @@ $menu-font-line-height: 2.5rem;
         &:hover {
             color: $menu-item-color-hover;
         }
+
+        // wrap Title on small screens
+        @media screen and (max-width: $breakpoint-medium) {
+            line-height: 1.4;
+            padding-top: .6rem;
+            max-width: 10rem;
+        }
     }
 
     .logo__title--active {

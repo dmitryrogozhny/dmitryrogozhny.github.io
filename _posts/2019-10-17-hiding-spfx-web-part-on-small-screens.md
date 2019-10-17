@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hiding SPFx Web Part on Small Screens"
-description: "You might want to hide your SPFx web part or some of its elements for a particalar screen size. For example, you can hide your web part on small screens or display different controls for different sceen sizes. You can do that with Office UI Fabric. There is a set of SCSS mixins available in Office UI Fabric that you can use to control the visibility of your web part and its elements."
+description: "You might want to hide your SPFx web part or some of its elements for a particular screen size. For example, you can hide your web part on small screens or display different controls for different screen sizes. You can do that with Office UI Fabric. There is a set of SCSS mixins available in Office UI Fabric that you can use to control the visibility of your web part and its elements."
 date: 2019-10-17 12:00
 
 image: "/assets/2019/hiding-spfx-web-part-hero.jpg"
@@ -9,7 +9,7 @@ image: "/assets/2019/hiding-spfx-web-part-hero.jpg"
 tags: [sharepoint, spfx]
 ---
 
-You might want to hide your SPFx web part or some of its elements for a particalar screen size. For example, you can hide your web part on small screens or display different controls for different sceen sizes.
+You might want to hide your SPFx web part or some of its elements for a particular screen size. For example, you can hide your web part on small screens or display different controls for different screen sizes.
 
 You can do that with [Office UI Fabric](https://developer.microsoft.com/en-us/fabric#/). There is a set of SCSS mixins available in Office UI Fabric that you can use to control the visibility of your web part and its elements.
 

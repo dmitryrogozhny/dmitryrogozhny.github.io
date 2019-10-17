@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flow Pattern: Service Account"
+title: "Flow Patterns: Service Account"
 description: "If you are using Microsoft Flow to automate processes in your company, you may benefit from dedicated service accounts to run your Flows."
 date: 2019-10-15 12:00
 

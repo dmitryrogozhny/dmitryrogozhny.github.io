@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flow Pattern: SharePoint Configuration List"
+title: "Flow Patterns: SharePoint Configuration List"
 description: "Here is an approach you can use to manage configuration for complex Flows. The idea is to separate flow's settings from its logic and keep settings in a SharePoint list item. This approach works well for flows with complex configurations, especially if a flow works with SharePoint."
 date: 2019-10-10 12:00
 

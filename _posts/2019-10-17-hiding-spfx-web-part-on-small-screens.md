@@ -14,26 +14,18 @@ You might want to hide your SPFx web part or some of its elements for a particul
 You can do that with [Office UI Fabric](https://developer.microsoft.com/en-us/fabric#/). There is a set of SCSS mixins available in Office UI Fabric that you can use to control the visibility of your web part and its elements.
 
 If you want your elements to hide starting from some resolution and smaller, you need one of mixins:
-- `ms-screen-sm-down`
-- `ms-screen-md-down`
-- `ms-screen-lg-down`
-- `ms-screen-xl-down`
-- `ms-screen-xxl-down`
+- `ms-screen-sm-down` (480px and down)
+- `ms-screen-md-down` (640px and down)
+- `ms-screen-lg-down` (1024px and down)
+- `ms-screen-xl-down` (1366px and down)
+- `ms-screen-xxl-down` (1920px and down)
 
 If you want your elements to hide starting from some resolution and larger, you need these mixins:
-- `ms-screen-md-up`
-- `ms-screen-lg-up`
-- `ms-screen-xl-up`
-- `ms-screen-xxl-up`
-- `ms-screen-xxxl-up`
-
-The breakpoins for these mixins are the following:
-- `sm`: 320px;
-- `md`: 480px;
-- `lg`: 640px;
-- `xl`: 1024px;
-- `xxl`: 1366px;
-- `xxxl`: 1920px;
+- `ms-screen-md-up` (480px and up)
+- `ms-screen-lg-up` (640px and up)
+- `ms-screen-xl-up` (1024px and up)
+- `ms-screen-xxl-up` (1366px and up)
+- `ms-screen-xxxl-up` (1920px and up)
 
 For example, if you want to hide your web part on screens smaller than 1024px, you can do that with the `ms-screen-lg-down` mixin and the following scss code:
 {% highlight scss %}

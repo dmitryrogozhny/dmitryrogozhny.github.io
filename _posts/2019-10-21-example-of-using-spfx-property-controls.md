@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Example Project for @pnp/spfx-property-controls"
-description: ""
+description: "If you’ve never used @pnp/spfx-property-controls or just started looking at it, the following demo might be useful for you. @pnp/spfx-property-controls is an open-sourced project from the SharePoint PnP team that provides a set of reusable property pane controls. You can use these controls in your SharePoint Framework (SPFx) projects."
 date: 2019-10-21 12:00
 
 image: "/assets/2019/reusable-controls-hero.jpg"

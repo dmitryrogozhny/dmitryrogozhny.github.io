@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Common Issue When Using Office UI Fabric in SPFx Projects"
-description: ""
+description: "There is one common problem when using Office UI Fabric in SPFx that you can find in lots of projects. This problem is using global class names in SPFx web parts and React components. Here is how you can fix it."
 date: 2019-10-25 12:00
 
 image: "/assets/2019/using-office-ui-fabric-in-spfx-hero.jpg"

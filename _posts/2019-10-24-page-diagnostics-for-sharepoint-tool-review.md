@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Review of Page Diagnostics for SharePoint Tool"
-description: ""
+description: "Page Diagnostics for SharePoint tool is a Chrome browser extension. It allows to analyze modern pages in SharePoint Online and get recommendations about improvements. This is a great tool you can use to improve your SharePoint Online intranet."
 date: 2019-10-24 12:00
 
 image: "/assets/2019/page-diagnostics-for-sharepoint-hero.jpg"

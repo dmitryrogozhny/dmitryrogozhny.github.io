@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Video Web Part"
-description: ""
+description: "The Video web part allows you to play videos in your SharePoint Online pages. You can add the web part to a full-width section to make a great looking landing page, or add to multi-column sections to make your pages more dynamic. Additionally, you can specify a link to navigate to when a user clicks a video and an optional text that will be shown over a video."
+
 date: 2019-10-28 12:00
 
 image: "/assets/2019/video-web-part-hero.jpg"

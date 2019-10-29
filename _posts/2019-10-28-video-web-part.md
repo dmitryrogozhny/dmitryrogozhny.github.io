@@ -14,6 +14,8 @@ The Video web part allows you to play videos in your SharePoint Online pages.
 
 You can add the web part to a full-width section to make a great looking landing page, or add to multi-column sections to make your pages more dynamic. Additionally, you can specify a link to navigate to when a user clicks a video and an optional text that will be shown over a video.
 
+**Note**: this post gives an overview of the Video web part functionality. If you are interested in implementation details, check the [Video Web Part. Implementation details]({{ site.baseurl }}{% post_url 2019-10-29-video-web-part-implementation-details %}) post.
+
 <video autoplay="" loop="" src="{{ site.baseurl }}/assets/2019/video-web-part.mp4" ></video>
 
 The source code for the web part is available in the [GitHub repository](https://github.com/dmitryrogozhny/sharepoint-lab/tree/master/video).

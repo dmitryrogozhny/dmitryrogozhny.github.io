@@ -4,11 +4,17 @@ title: "Flow Patterns: Service Account"
 description: "If you are using Microsoft Flow to automate processes in your company, you may benefit from dedicated service accounts to run your Flows."
 date: 2019-10-15 12:00
 
+series: "Flow Patterns"
+
 image: "/assets/2019/flow-pattern-service-account-hero.jpg"
 
 tags: [sharepoint, flow, office 365]
 ---
 
+## Goal
+Use dedicated service account to run your Microsoft Flows.
+
+## Solution
 If you are using Microsoft Flow to automate processes in your company, you may benefit from dedicated service accounts to run your Flows.
 
 For simple personal flows, users can use their accounts. With more complex flows you may encounter the following problems:

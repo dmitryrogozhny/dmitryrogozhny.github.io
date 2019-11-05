@@ -85,7 +85,7 @@ Every link will have an `onclik` event handler that will scroll the page to a co
 
 **Important**: at this stage, there may be no ids for headings, so we won't be able to generate anchor links. The menu will work though, as we're using the reference to an Html element instead. The only problem is that links in a menu will not contain anchors, so if we'll copy such a link, it will not contain `#HEADING-ID` at the end.
 
-### Forcing additional rending
+### Forcing additional rendings
 
 SharePoint will assign anchor links to headings once all the Text web parts got rendered on a page. In order to get these anchor links in the Table of Contents web part, we set a repetitive timeout with the [`setInterval`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) in the `componentDidMount` function. On a timeout, we set an empty state for the component to force a rendering.
 

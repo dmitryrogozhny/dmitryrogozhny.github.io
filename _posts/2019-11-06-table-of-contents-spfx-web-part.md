@@ -2,7 +2,7 @@
 layout: post
 title: "Table of Contents Web Part"
 description: "The Table of Contents web part generates a navigation menu using H1, H2, and H3 headings available on a page. It is useful for large pages as it allows to quickly navigate to a specific section."
-date: 2019-11-05 12:00
+date: 2019-11-06 12:00
 
 image: "/assets/2019/table-of-contents-web-part-hero.jpg"
 

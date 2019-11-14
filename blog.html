@@ -9,4 +9,6 @@ permalink: /blog/
     Blog
 </h1>
 
-{% include posts-list.html title="" posts=site.posts postsToHighlight=10 %}
+{% include tags-cloud.html %}
+
+{% include posts-list.html title="Posts" posts=site.posts postsToHighlight=10 %}

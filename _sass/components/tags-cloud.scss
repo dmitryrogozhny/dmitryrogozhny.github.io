@@ -1,0 +1,18 @@
+.tags-cloud {
+    padding: 1rem 0;
+}
+
+.tags-cloud .tag {
+    display: inline-block;
+    min-width: 50px;
+
+    border: 1px solid #ccc;
+    padding: 4px 7px;
+    margin: 3px 1px;
+    line-height: 2;
+
+    color: #005ea5;
+    background-color: #eee;
+    text-decoration: none;
+    text-align: center;
+}

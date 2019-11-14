@@ -1,0 +1,25 @@
+{% comment %}
+    Adds references to JavaScript and CSS files to a page.
+
+    Takes page.custom-javascript-list varialbe and renders script tag for each item in it.
+    Takes page.custom-css-list varialbe and renders link tag for each item in it.
+{% endcomment %}
+
+{% capture temptags %}
+    {% for tag in site.tags %}
+        {{ tag[1].size | plus: 1000 }}~{{ tag[0] }}~{{ tag[1].size }}--
+    {% endfor %}
+{% endcapture %}
+
+{% assign sortedtemptags = temptags | split:'--' | sort | reverse %}
+
+<div class="tags-cloud">
+    <h2>Tags</h2>
+    {% for temptag in sortedtemptags %}
+        {% assign tagitems = temptag | split: '~' %}
+        {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+        {% if tagname != "" %}
+            <a class="tag" href="{% include tag-url.html tag=tagname %}"><nobr>{{ tagname }}</nobr></a>
+        {% endif %}
+    {% endfor %}
+</div>

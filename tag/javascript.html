@@ -1,0 +1,16 @@
+---
+layout: page
+title: Javascript
+description: All posts for Javascript
+permalink: /blog/tag/javascript
+
+tag: javascript
+---
+
+<h1 class="page-header">
+    #&thinsp;{{page.title}}
+</h1>
+
+{% assign postsWithTag = site.tags[page.tag] %}
+
+{% include posts-list.html title="" posts=postsWithTag postsToHighlight=100 %}

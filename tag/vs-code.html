@@ -1,0 +1,16 @@
+---
+layout: page
+title: Visual Studio Code
+description: All posts for Visual Studio Code
+permalink: /blog/tag/vs-code
+
+tag: vs code
+---
+
+<h1 class="page-header">
+    #&thinsp;{{page.title}}
+</h1>
+
+{% assign postsWithTag = site.tags[page.tag] %}
+
+{% include posts-list.html title="" posts=postsWithTag postsToHighlight=100 %}

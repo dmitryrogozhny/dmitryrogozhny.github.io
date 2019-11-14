@@ -19,3 +19,7 @@
 <![endif]-->
 
 {% include custom-scripts.html %}
+
+{% if site.tags != "" %}
+    {% include collect-tags.html %}
+{% endif %}

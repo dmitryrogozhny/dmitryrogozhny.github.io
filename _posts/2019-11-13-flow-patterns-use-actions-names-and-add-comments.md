@@ -8,7 +8,7 @@ series: "Flow Patterns"
 
 image: "/assets/2019/flow-patterns-action-name-and-comments-hero.jpg"
 
-tags: [sharepoint, flow, power automate, office 365]
+tags: [sharepoint, flow, office 365]
 ---
 
 ## Goal

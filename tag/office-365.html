@@ -1,0 +1,16 @@
+---
+layout: page
+title: Office 365
+description: All posts for Office 365
+permalink: /blog/tag/office-365
+
+tag: office 365
+---
+
+<h1 class="page-header">
+    #&thinsp;{{page.title}}
+</h1>
+
+{% assign postsWithTag = site.tags[page.tag] %}
+
+{% include posts-list.html title="" posts=postsWithTag postsToHighlight=100 %}

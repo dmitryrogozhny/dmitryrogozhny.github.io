@@ -1,0 +1,16 @@
+---
+layout: page
+title: Office UI Fabric
+description: All posts for Office UI Fabric
+permalink: /blog/tag/office-ui
+
+tag: office ui
+---
+
+<h1 class="page-header">
+    #&thinsp;{{page.title}}
+</h1>
+
+{% assign postsWithTag = site.tags[page.tag] %}
+
+{% include posts-list.html title="" posts=postsWithTag postsToHighlight=100 %}

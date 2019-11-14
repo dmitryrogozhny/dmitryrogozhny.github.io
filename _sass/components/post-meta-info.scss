@@ -1,4 +1,20 @@
 .post-meta-info {
-    padding-top: .8rem; 
-    padding-bottom: 2rem;    
+    $link-color: #4f6d8a;
+
+    padding: 0.1rem 0 0.5rem 0;
+
+    color: #4d4d4d;
+
+    a {
+        font-weight: 600;
+        color: $link-color;
+
+        &:visited {
+            color: $link-color;
+        }
+    }
+}
+
+p + .post-meta-info {
+    padding-top: 1rem;
 }

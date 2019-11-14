@@ -21,12 +21,8 @@ $text-font-size--small: .8rem;
 $text-font-size--medium: 1rem;
 $text-font-size--large: 1.1rem;
 
-$tertiary-info-font-size--small: .8 * $text-font-size--small;
-$tertiary-info-font-size--medium: .8 * $text-font-size--medium;
-$tertiary-info-font-size--large: .8 * $text-font-size--large;
-
 $text-font-size: $text-font-size--small;
-$tertiary-info-font-size: $tertiary-info-font-size--small;
+$tertiary-info-font-size: 1.1 * $text-font-size;
 
 $header1-font-size: 3 * $text-font-size;
 $header2-font-size: 2 * $text-font-size;
@@ -47,14 +43,12 @@ html {
     // increase font sizes on tablet screens
     @media screen and (min-width: $breakpoint-small) {
         $text-font-size: $text-font-size--medium;
-        $tertiary-info-font-size: $tertiary-info-font-size--medium;
         font-size: $text-font-size;
     }
 
     // increase font sizes on larger screens
     @media screen and (min-width: $breakpoint-medium) {
         $text-font-size: $text-font-size--large;
-        $tertiary-info-font-size: $tertiary-info-font-size--large;
         font-size: $text-font-size;
     }
 }

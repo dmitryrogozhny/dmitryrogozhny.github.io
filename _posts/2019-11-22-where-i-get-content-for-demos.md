@@ -9,7 +9,7 @@ image: "/assets/2019/quickly-getting-content-for-demo-hero.jpg"
 tags: [design, sharepoint]
 ---
 
-Here's how I get text, images, illustrations, and videos for my demos and prototypes.
+Here's where I get text, images, illustrations, and videos for demos and prototypes.
 
 ### Text
 

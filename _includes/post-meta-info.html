@@ -6,9 +6,6 @@
         {{ page.date | date: "%B %d, %Y"}}
     </date> in
     {% for tag in page.tags %}
-        <a href="{% include tag-url.html tag=tag %}">{{ tag }}</a>
-        {% if forloop.last == false %}
-            ,
-        {% endif %}
+        <a href="{% include tag-url.html tag=tag %}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
     {% endfor %}
 </div>

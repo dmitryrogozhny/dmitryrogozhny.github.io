@@ -9,6 +9,16 @@ image: "/assets/2019/moving-footer-from-sp-starter-kit-1-hero.jpg"
 tags: [sharepoint, spfx, pnp]
 ---
 
+<aside markdown="1">
+**Posts in the series**:
+1. Portal footer overview (_this post_)
+2. [Create data sources]({{ site.baseurl }}{% post_url 2019-11-28-moving-footer-from-sharepoint-starter-kit-2-create-data-sources %})
+3. Create new SPFx project
+4. Fix issues
+5. Deploy and add to a site
+</aside>
+
+
 I will show how to move the Portal Footer from the [SharePoint Starter Kit](https://github.com/SharePoint/sp-starter-kit) into a separate project.
 ![Footer preview]({{ site.baseUrl}}/assets/2019/moving-footer-from-sp-starter-kit-footer-preview.jpg)
 

@@ -13,7 +13,7 @@ tags: [sharepoint, spfx, pnp]
 **Posts in the series**:
 1. Portal footer overview (_this post_)
 2. [Create data sources]({{ site.baseurl }}{% post_url 2019-11-28-moving-footer-from-sharepoint-starter-kit-2-create-data-sources %})
-3. Create new SPFx project
+3. [Create new SPFx project]({{ site.baseurl }}{% post_url 2019-11-29-moving-footer-from-sharepoint-starter-kit-3-new-project %})
 4. Fix issues
 5. Deploy and add to a site
 </aside>

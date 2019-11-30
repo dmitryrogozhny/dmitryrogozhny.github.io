@@ -14,7 +14,7 @@ tags: [sharepoint, spfx, pnp]
 1. [Portal footer overview]({{ site.baseurl }}{% post_url 2019-11-27-moving-footer-from-sharepoint-starter-kit-1-footer-overview %})
 2. [Create data sources]({{ site.baseurl }}{% post_url 2019-11-28-moving-footer-from-sharepoint-starter-kit-2-create-data-sources %})
 3. Create new SPFx project (_this post_)
-4. Fix issues
+4. [Fix issues]({{ site.baseurl }}{% post_url 2019-11-30-moving-footer-from-sharepoint-starter-kit-to-4-fix-issues %})
 5. Deploy and add to a site
 </aside>
 
@@ -27,12 +27,14 @@ Let's start by creating a new SharePoint Framework project.
 Here're the settings I've used creating a new project with `yo @microsoft/sharepoint`:
 - What is your solution name? **portal-footer**
 - Where do you want to place the files? **Create a subfolder with solution name**
-- Do you want to allow the tenant admin the choice of being able to deploy theolution to all sites immediately without running any feature deployment or adding apps in sites? **No**
+- Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites? **Yes**
 - Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant? **No**
 - Which type of client-side component to create? **Extension**
 - Which type of client-side extension to create? **Application Customizer**
 - What is your Application Customizer name? **PortalFooter**
 - What is your Application Customizer description? **PortalFooter description**
+
+**Note**: I've selected to allow the tenant admin to be able to deploy the solution tenant-wide. This is not required but it makes it easier to deploy and manage.
 
 The project generator will create a new project and will install additional packages. Once done, navigate to the project folder and execute `gulp build` to make sure that the generated project works fine.
 

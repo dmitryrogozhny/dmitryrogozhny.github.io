@@ -14,7 +14,7 @@ tags: [sharepoint, spfx, pnp]
 1. [Portal footer overview]({{ site.baseurl }}{% post_url 2019-11-27-moving-footer-from-sharepoint-starter-kit-1-footer-overview %})
 2. Create data sources (_this post_)
 3. [Create new SPFx project]({{ site.baseurl }}{% post_url 2019-11-29-moving-footer-from-sharepoint-starter-kit-3-new-project %})
-4. Fix issues
+4. [Fix issues]({{ site.baseurl }}{% post_url 2019-11-30-moving-footer-from-sharepoint-starter-kit-to-4-fix-issues %})
 5. Deploy and add to a site
 </aside>
 

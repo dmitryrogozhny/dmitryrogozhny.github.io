@@ -16,6 +16,7 @@ tags: [sharepoint, spfx, pnp]
 3. [Create new SPFx project]({{ site.baseurl }}{% post_url 2019-11-29-moving-footer-from-sharepoint-starter-kit-3-new-project %})
 4. [Fix issues]({{ site.baseurl }}{% post_url 2019-11-30-moving-footer-from-sharepoint-starter-kit-to-4-fix-issues %})
 5. Deploy and add to a site (_this post_)
+6. [Bonus: Moving Collaboration Footer]({{ site.baseurl }}{% post_url 2019-12-10-moving-collab-footer-from-sharepoint-starter-kit %})
 </aside>
 
 This time we're going to look at how to deploy the package to a tenant and how to add the footer to a site.

@@ -209,11 +209,11 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.11.3)
     multipart-post (2.0.0)
-    nokogiri (1.10.5)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.5-x64-mingw32)
+    nokogiri (1.10.8-x64-mingw32)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.5-x86-mingw32)
+    nokogiri (1.10.8-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -247,7 +247,6 @@ GEM
     tzinfo-data (1.2018.7)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.4.0)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -259,7 +258,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data
-  wdm (~> 0.1.0)
 
 BUNDLED WITH
    1.16.1

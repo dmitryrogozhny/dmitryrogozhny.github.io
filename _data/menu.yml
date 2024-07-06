@@ -1,11 +1,3 @@
-- title: Services
-  url: /services/
-  childItems:
-    - title: Intranet Configuration
-      url: /services/intranet-configuration/
-    - title: Office 365 Development
-      url: /services/development/
-
 - title: Blog
   url: /blog/
 
